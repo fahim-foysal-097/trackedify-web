@@ -41,6 +41,8 @@
     <!-- Google font -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 
+    <link rel="preload" as="image" href="assets/screenshots/ss_home.jpg" />
+
     <!-- Local styles -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/custom-cursor.css">
@@ -48,6 +50,27 @@
 
     <link rel="icon" href="assets/icon.png" />
     <meta name="theme-color" content="#0f1724">
+
+
+    <script type="application/ld+json">
+        {
+        "@context":"https://schema.org",
+        "@type":"SoftwareApplication",
+        "name":"Trackedify",
+        "operatingSystem":"Android",
+        "applicationCategory":"MobileApplication",
+        "url":"https://fahimfoysal.pro.bd/trackedify-web/",
+        "image":"https://fahimfoysal.pro.bd/trackedify-web/assets/og-image.jpg",
+        "description":"Trackedify is a simple, private, and intuitive expense tracker for Android. Track spending, view insights, and stay in control.",
+        "offers": {
+            "@type":"Offer",
+            "url":"https://github.com/fahim-foysal-097/trackedify/releases",
+            "availability":"https://schema.org/InStock"
+        }
+        }
+    </script>
+
+
 </head>
 
 <body class="app-body">
@@ -73,7 +96,7 @@
                 <a class="navbar-brand d-flex align-items-center gap-2" href="#">
                     <span class="brand-badge m-1">S</span>
                     <div>
-                        <div class="h5 m-0">Trackedify</div>
+                        <h5 class="m-0">Trackedify</h5>
                         <small class="text-muted">Expense Tracker</small>
                     </div>
                 </a>
@@ -198,34 +221,9 @@
                                 <div class="mb-3" style="font-size: 2rem; color: rgba(var(--accent1), 1);">
                                     <i class="bi bi-wifi-off"></i>
                                 </div>
-                                <h5 class="card-title">Offline Mode</h5>
+                                <h5 class="card-title">Offline</h5>
                                 <p class="card-text text-muted">Works fully offline - your data stays on your device.
                                 </p>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <div class="col-md-6 col-lg-4">
-                        <div class="feature-card card">
-                            <div class="card-body">
-                                <div class="mb-3" style="font-size: 2rem; color: rgba(var(--accent2), 1);">
-                                    <i class="bi bi-calculator-fill"></i>
-                                </div>
-                                <h5 class="card-title">Built-in Calculator</h5>
-                                <p class="card-text text-muted">Calculate expenses without leaving the app.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 col-lg-4">
-                        <div class="feature-card card">
-                            <div class="card-body">
-                                <div class="mb-3" style="font-size: 2rem; color: rgba(var(--accent3), 1);">
-                                    <i class="bi bi-download"></i>
-                                </div>
-                                <h5 class="card-title">Import & Export</h5>
-                                <p class="card-text text-muted">Import & export your database effortlessly.</p>
                             </div>
                         </div>
                     </div>
@@ -251,6 +249,30 @@
                                 <h5 class="card-title">App Locker</h5>
                                 <p class="card-text text-muted">Protect your app with a PIN and make your expenses
                                     private.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="feature-card card">
+                            <div class="card-body">
+                                <div class="mb-3" style="font-size: 2rem; color: rgba(var(--accent2), 1);">
+                                    <i class="bi bi-calculator-fill"></i>
+                                </div>
+                                <h5 class="card-title">Built-in Calculator</h5>
+                                <p class="card-text text-muted">Calculate expenses without leaving the app.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="feature-card card">
+                            <div class="card-body">
+                                <div class="mb-3" style="font-size: 2rem; color: rgba(var(--accent3), 1);">
+                                    <i class="bi bi-download"></i>
+                                </div>
+                                <h5 class="card-title">Import & Export</h5>
+                                <p class="card-text text-muted">Import & export your database effortlessly.</p>
                             </div>
                         </div>
                     </div>
@@ -499,8 +521,15 @@
         <!-- FOOTER -->
         <footer class="py-5 mt-6">
             <div class="container d-flex justify-content-between align-items-center">
-                <small class="text-muted">© <span id="curYear"></span> Trackedify - Built with care</small>
-                <a href="https://github.com/fahim-foysal-097/trackedify" class="text-muted small">Source</a>
+                <div>
+                    <i class="bi bi-c-circle-fill m-1"></i>
+                    <small class="text-muted"><span id="curYear"></span> Trackedify - Built with care in
+                        <code>Flutter</code></small>
+                </div>
+                <div>
+                    <i class="bi bi-github m-2"></i>
+                    <a href="https://github.com/fahim-foysal-097/trackedify" class="text-muted small">Source</a>
+                </div>
             </div>
         </footer>
     </main>
