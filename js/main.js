@@ -1,10 +1,10 @@
 (() => {
     // Hardcoded release info
-    const RELEASE_VERSION = "v1.8.0";
+    const LATEST_RELEASE_VERSION = "v1.9.0";
     const LINKS = {
-        arm64: `https://github.com/fahim-foysal-097/trackedify/releases/download/${RELEASE_VERSION}/trackedify-${RELEASE_VERSION}-arm64-v8a.apk`,
-        armeabi: `https://github.com/fahim-foysal-097/trackedify/releases/download/${RELEASE_VERSION}/trackedify-${RELEASE_VERSION}-armeabi-v7a.apk`,
-        universal: `https://github.com/fahim-foysal-097/trackedify/releases/download/${RELEASE_VERSION}/trackedify-${RELEASE_VERSION}-universal.apk`,
+        arm64: `https://github.com/fahim-foysal-097/trackedify/releases/download/${LATEST_RELEASE_VERSION}/trackedify-${LATEST_RELEASE_VERSION}-arm64-v8a.apk`,
+        armeabi: `https://github.com/fahim-foysal-097/trackedify/releases/download/${LATEST_RELEASE_VERSION}/trackedify-${LATEST_RELEASE_VERSION}-armeabi-v7a.apk`,
+        universal: `https://github.com/fahim-foysal-097/trackedify/releases/download/${LATEST_RELEASE_VERSION}/trackedify-${LATEST_RELEASE_VERSION}-universal.apk`,
     };
 
     // slideshow state (gallery modal)
@@ -30,7 +30,7 @@
 
     function setReleaseInfo() {
         const el = document.getElementById("release-info");
-        if (el) el.textContent = RELEASE_VERSION;
+        if (el) el.textContent = LATEST_RELEASE_VERSION;
     }
 
     /* ---------- DOWNLOAD BUTTONS ---------- */
