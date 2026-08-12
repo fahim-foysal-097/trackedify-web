@@ -1,6 +1,6 @@
 (() => {
     // Hardcoded release info
-    const LATEST_RELEASE_VERSION = "v1.9.0";
+    const LATEST_RELEASE_VERSION = "v1.10.0";
     const LINKS = {
         arm64: `https://github.com/fahim-foysal-097/trackedify/releases/download/${LATEST_RELEASE_VERSION}/trackedify-${LATEST_RELEASE_VERSION}-arm64-v8a.apk`,
         armeabi: `https://github.com/fahim-foysal-097/trackedify/releases/download/${LATEST_RELEASE_VERSION}/trackedify-${LATEST_RELEASE_VERSION}-armeabi-v7a.apk`,
